@@ -20,6 +20,8 @@
             padding: 5px 0;
             margin: 0;
             overflow: auto;
+            position: fixed;
+            /* fixed讓他固定在視窗上的位置不被捲動 */
         }
 
         .logo {
@@ -61,6 +63,7 @@
         }
 
         .about {
+            width: 100%;
             color: white;
             font-size: 18px;
             text-align: center;
@@ -71,13 +74,13 @@
             /* font-family: ; */
         }
 
-        .wrap-body {
-            height: 1000px;
+        .section1 {
+            height: auto;
             width: 960px;
             margin: 0 auto;
-            padding: 100px 20px;
+            padding: 100px 0;
             max-width: 95%;
-
+            overflow: auto;
         }
 
         .wrap-text {
@@ -95,6 +98,7 @@
         .text1 {
             margin: 0 0 16px;
             font-size: 18px;
+            text-align: left;
         }
 
         .border1 {
@@ -102,47 +106,124 @@
             margin: 100px 0 50px;
         }
 
-        .text-border {
+        .orange-font {
             color: #ff9d3a;
             background-color: #001150;
             text-align: center;
+            /* width: 370px; */
+            font-size: 20px;
+        }
+
+        .f1 {
             margin: -65px auto 50px;
             width: 370px;
-            font-size: 20px;
         }
 
         .wrap-card {
             width: 100%;
             margin: 0 center;
+            overflow: auto;
         }
 
         .card {
             float: left;
             width: 300px;
-            height: 400px;
             text-align: center;
+            box-sizing: border-box;
+            position: relative;
             /* margin: 0 auto; */
         }
 
-        /* .c1 {
-            float: left;
+        span {
+            font-size: 22px;
+            margin: 30% 0 0 -45px;
+            /* position: absolute; */
+            text-align: center;
         }
 
-        .c2 {
-            float: left;
+        .text-c1,
+        .text-c2,
+        .text-c3 {
+            position: absolute;
         }
 
-        .c3 {
-            float: left;
-        } */
+        span.orange-font {
+            margin: 0;
+        }
+
         .circle img {
-            width: 200px;
-            height: 200px;
+            width: 250px;
+            height: 250px;
         }
 
         .text {
             margin: 0 auto;
             /* text-align: center; */
+        }
+
+        .content {
+            font-size: 18px;
+            max-width: 200px;
+            color: white;
+            width: auto;
+            word-break: break-all;
+            margin: 0 auto;
+            text-align: left;
+        }
+
+        .lecture {
+            float: left;
+            width: 30%;
+            margin: 0 1.5%;
+            padding: 0 30px;
+            box-sizing: border-box;
+        }
+
+        .lecture img {
+            width: 100%;
+            vertical-align: middle;
+
+        }
+
+        p {
+            font-size: 20px;
+            color: white;
+            line-height: 30px;
+            font-weight: 600;
+            margin: 20px auto;
+            text-align: center;
+        }
+
+        span.orange-font {
+            font-size: 22px;
+        }
+
+        .section2 {
+            padding: 70px 0;
+            box-sizing: border-box;
+            overflow: auto;
+        }
+
+        .lec {
+            border: 1px solid white;
+            padding: 30px;
+        }
+
+        .section3 {
+            width: 100%;
+            padding: 100px 20px;
+            box-sizing: border-box;
+        }
+
+        .gradual {
+            background: linear-gradient();
+        }
+
+        .grad {
+            background: url(./link/bar-bg.png) top center;
+            height: 50px;
+            padding: 10px 0;
+            box-sizing: border-box;
         }
     </style>
 </head>
@@ -164,7 +245,7 @@
         <img src="./link/banner01.png" alt="banner">
         <p class="about">About 2020 ITRI ICT TechDay</p>
     </div>
-    <div class="wrap-body">
+    <section class="section1">
         <div class="wrap-text">
             <h2>領航科技 實現未來 Realizing 5G Futures </h2>
             <p class="text1">
@@ -175,28 +256,116 @@
             </p>
         </div>
         <div class="border1"></div>
-        <div class="text-border">關鍵布局　x　前瞻應用　x　技術剖析</div>
+        <div class="orange-font f1">關鍵布局　x　前瞻應用　x　技術剖析</div>
         <div class="wrap-card">
-            <div class="card c1">
-                <p class="text card1">ICT趨勢論壇</p>
+            <div class="card">
+                <span class="text-c1">ICT<br>趨勢論壇</span>
                 <div class="circle">
                     <img src="./link/about-01.png" alt="about1">
                 </div>
+                <p class="orange-font">09:00-12:00</p>
+                <p class="content">
+                    國際級ICT產業專家趨勢演講，分享國際最新動態，掌握產業關鍵。
+                </p>
             </div>
-            <div class="card c2">
-                <p class="text card2">ICT專家觀點</p>
+            <div class="card">
+                <span class="text-c2">ICT<br>專家觀點</span>
                 <div class="circle">
                     <img src="./link/about-02.png" alt="about2">
                 </div>
+                <p class="orange-font">13:00-17:00</p>
+                <p class="content">
+                    聚焦五大關鍵領域，深入探討ICT產業發展，完整剖析最新技術。
+                </p>
             </div>
-            <div class="card c3">
-                <p class="text card3">ICT展示體驗</p>
+            <div class="card">
+                <span class="text-c3">ICT<br>展示體驗</span>
                 <div class="circle">
                     <img src="./link/about-01.png" alt="about3">
                 </div>
+                <p class="orange-font">09:00-17:00</p>
+                <p class="content">
+                    超過30項最新ICT應用技術於現場完整展示，與國際同步體驗最前瞻的技術應用。
+                </p>
             </div>
         </div>
-    </div>
+    </section>
+    <p class="about">講者簡介</p>
+    <section class="section2">
+        <div class="lecture">
+            <img src="./link/lecturer-01.png" alt="">
+            <p>
+                <span class="orange-font">闕志克 Tzi-Cker Chiueh</span>
+                <br>
+                / 工研院資訊與通訊研究所 所長
+                <br>
+                Vice President ＆ General Director, ICL, ITRI
+            </p>
+            <div class="content lec">
+                闕志克博士目前擔任工研院資通所「資訊與通訊研究所」所長，曾擔任「雲端運算行動應用科技中心」主任及紐約石溪大學電腦科學系教授。闕博士曾任職賽門鐵克( Symantec
+                )美國總部核心研究實驗室總監和美國國防先進研究計畫署( DARPA )策劃顧問，在系統軟體、網路架構與資訊安全的創新應用上研究成果豐碩，發表過相關學術文章超過250篇，並多次獲得國際性最佳論文獎殊榮。
+            </div>
+        </div>
+        <div class="lecture">
+            <img src="./link/lecturer-02.png" alt="">
+            <p>
+                <span class="orange-font"> 井琪 Chee Ching</span>
+                <br>
+                / 遠傳電信 總經理
+                <br>
+                President, Far EasTone Telecommunications
+            </p>
+            <div class="content lec">
+                井琪博士於2018年加入遠傳電信，先擔任轉型辦公室首席轉型長，並於2019年接任遠傳電信總經理一職。自接任以來，她致力於推動「精實、轉型、再成長」的策略，培養「5G大人物」人才並帶領團隊目標超乎傳統電信業者角色。加入遠傳電信前，井琪博士擁有AT＆T網路運營及資訊科技管理長達23年的經驗，她專精網路運營及規劃，工序工程以及系統解決方案等領域。並於2018年獲選”美國亞裔50傑出企業家”的肯定。
+            </div>
+        </div>
+        <div class="lecture">
+            <img src="./link/lecturer-03.png" alt="">
+            <p>
+                <span class="orange-font">黃欽勇 Colley Hwang</span>
+                <br>
+                / DIGITIMES電子時報 社長
+                <br>
+                Founder ＆ President, DIGITIMES
+            </p>
+            <div class="content lec">
+                黃欽勇社長是位資歷超過35年的產業分析師，著有《Asian
+                Edge》、《科技島鏈》、《巧借東風》、《出擊》、《西進與長征》、《打造數位台灣》、《跨世紀資訊商戰》、《電腦王國ROC》等書，一路見證PC、行動通信與物聯網時代的變革。曾受邀到微軟、台積電、鴻海、友達、聯電、宏碁、聯想、三星、華為、京東方、應用材料、新思科技、Rohm、Epson等多家國際企業總部講授產業趨勢，為身經百戰的跨界創業與產業專家。
+            </div>
+        </div>
+    </section>
+    <p class="about">活動議程</p>
+    <section class="section3">
+        <div class="schedule-am">
+            <p class="grad">ITRI ICT 趨勢論壇</p>
+            <p class="orange-font">洞悉產業趨勢</p>
+        </div>
+        <table>
+            <tbody>
+                <tr>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
 
 
 </body>
