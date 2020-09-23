@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .wrap {
+            width: 100%;
+            display: flex;
+            /* flex從橫向寬100%文字方塊變成寬三等份向下 */
+        }
+
+        .box {
+            margin: 10px;
+            background-color: thistle;
+            text-overflow: ellipsis;
+            overflow: hidden;
+            /* white-space: nowrap; */
+            display: -webkit-box;
+            -webkit-line-clamp: 4;
+            -webkit-box-orient: vertical;
+        }
+
+        .container {
+            max-width: 70%;
+        }
+
+        .box1 {
+            border: 1px solid black;
+            margin: 10px;
+        }
+
+        .normal {
+            /* word-break: normal; */
+            word-wrap: break-word;
+        }
+
+        .break-all {
+            word-break: break-all;
+        }
+
+        .keep-all {
+            /* word-break: keep-all; */
+            word-wrap: normal;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrap">
+        <div class="box">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente quam repudiandae fugit, fuga
+            explicabo in ducimus eius beatae asperiores quaerat facilis tempore voluptates voluptate maxime nam alias
+            temporibus? Ea molestias iure ut accusantium consequuntur ex laboriosam aliquam cum minus, quae optio ullam
+            sint iste doloremque quas quisquam maxime totam suscipit.</div>
+        <div class="box">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente quam repudiandae fugit, fuga
+            explicabo in ducimus eius beatae asperiores quaerat facilis tempore voluptates voluptate maxime nam alias
+            temporibus? Ea molestias iure ut accusantium consequuntur ex laboriosam aliquam cum minus, quae optio ullam
+            sint iste doloremque quas quisquam maxime totam suscipit.</div>
+        <div class="box">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente quam repudiandae fugit, fuga
+            explicabo in ducimus eius beatae asperiores quaerat facilis tempore voluptates voluptate maxime nam alias
+            temporibus? Ea molestias iure ut accusantium consequuntur ex laboriosam aliquam cum minus, quae optio ullam
+            sint iste doloremque quas quisquam maxime totam suscipit.</div>
+    </div>
+    <div class="container">
+        <div class="box1 normal">
+            Lorem ipsum dolor sit, amet consectetur rerum, et voluptate laboriosam
+            conssdSDDCSDCSCZDFZDFfsrgfvffijljilimlmomo ectetur adipisicing elit. Culpa
+            magnam dignissimos magni ratione illum sit, corrupti optio molestias molestiae
+            deleniti?內容水溝檔案新增記憶臨床，全家大型都市，年齡方法頭銜轉換予以適應成員四個軍事，實際上解放挑戰青草湖解決方案城市一大圖像化報名，把我符合前往歲月，小學看了網際網路相互不僅日子兩人更是掌握體育感到如何，招生家族良好自己的範圍電力顧問，最初參與登錄，那時人員非。
+        </div>
+        <div class="box1 break-all">
+            Lorem ipsum dolor sit, amet consectetur rerum, et voluptate laboriosam
+            conssdSDDCSDCSCZDFZDFfsrgfvffijljilimlmomo ectetur adipisicing elit. Culpa
+            magnam dignissimos magni ratione illum sit, corrupti optio molestias molestiae
+            deleniti?內容水溝檔案新增記憶臨床，全家大型都市，年齡方法頭銜轉換予以適應成員四個軍事，實際上解放挑戰青草湖解決方案城市一大圖像化報名，把我符合前往歲月，小學看了網際網路相互不僅日子兩人更是掌握體育感到如何，招生家族良好自己的範圍電力顧問，最初參與登錄，那時人員非。
+        </div>
+        <div class="box1 keep-all">
+            Lorem ipsum dolor sit, amet consectetur rerum, et voluptate laboriosam
+            conssdSDDCSDCSCZDFZDFfsrgfvffijljilimlmomo ectetur adipisicing elit. Culpa
+            magnam dignissimos magni ratione illum sit, corrupti optio molestias molestiae
+            deleniti?內容水溝檔案新增記憶臨床，全家大型都市，年齡方法頭銜轉換予以適應成員四個軍事，實際上解放挑戰青草湖解決方案城市一大圖像化報名，把我符合前往歲月，小學看了網際網路相互不僅日子兩人更是掌握體育感到如何，招生家族良好自己的範圍電力顧問，最初參與登錄，那時人員非。
+        </div>
+    </div>
+</body>
+
+</html>

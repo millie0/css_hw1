@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>color</title>
+    <style>
+        #p1 {
+            background-color: hsla(180, 60%, 80%, 0.6);
+            color: rgba(10, 150, 58, 0.5);
+            font-size: 20px;
+        }
+
+        .box {
+            width: 200px;
+            height: 200px;
+            border-radius: 10px 30px 50px;
+            float: left;
+            margin: 10px;
+        }
+
+        .box1 {
+            background-color: greenyellow;
+            border-radius: 10px 30px 100px;
+        }
+
+        .box2 {
+            background-color: rgb(135, 236, 228);
+            border-radius: 10px 30px 50px 200px;
+        }
+
+        .box3 {
+            background-color: hsla(60, 60%, 90%, 1);
+            border-radius: 50%;
+        }
+
+        .box4 {
+            background-color: rgb(106, 152, 212);
+            border-radius: 200px 0 0;
+        }
+
+        .box5 {
+            background-color: rgb(103, 138, 126);
+            border-radius: 100px/150px 0;
+        }
+
+        .circle {
+            width: 200px;
+            height: 200px;
+            overflow: hidden;
+            border-radius: 50%;
+            clear: left;
+        }
+
+        .circle img {
+            width: 200px;
+            height: 200px;
+        }
+
+        .card {
+            width: 400px;
+            height: 500px;
+            background-color: hsl(180, 24%, 63%);
+            border-radius: 40px;
+            /* padding-top: 30px; */
+            text-align: center;
+            overflow: hidden;
+        }
+
+        .figure {
+            width: 200px;
+            height: 200px;
+            border-radius: 100%;
+            overflow: hidden;
+            /* text-align: center; */
+            margin: 20px auto 0;
+            /* padding: 30px; */
+        }
+
+        .figure img {
+            width: 200px;
+            /* padding: 30px; */
+        }
+
+        h2,
+        p {
+            /* text-align: center; */
+            margin: 10px;
+        }
+
+        h2 {
+            width: 80%;
+            margin: 12px auto 0;
+            border-bottom: 1px solid indigo;
+            padding-bottom: 10px;
+        }
+
+        .wrap {
+            width: 300px;
+            height: 100px;
+            margin: 30px auto 0;
+            border: 20px solid transparent;
+            border-image: url("images/border-image.png") 20 stretch;
+        }
+
+        .picture {
+            height: 150px;
+            background: url(./images/mosaic-3394375_640.jpg) no-repeat;
+            /* border-radius: 40px 40px 0 0; */
+            margin-top: -500px;
+        }
+    </style>
+
+</head>
+
+<body>
+    <p id="p1">color.border-radius</p>
+    <div class="box box1"></div>
+    <div class="box box2"></div>
+    <div class="box box3"></div>
+    <div class="box box4"></div>
+    <div class="box box5"></div>
+    <figure class="circle">
+        <img src="./link/alien1_2.jpg" alt="">
+    </figure>
+
+    <div class="card">
+
+        <div class="figure">
+            <img src="./link/alien2.jpg" alt="">
+        </div>
+        <div class="picture"></div>
+        <div class="wrap">
+            <h2>Marvin</h2>
+            <p>hey i was born on the moooon</p>
+        </div>
+
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,100 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>無標題文件</title>
+	<style>
+		fieldset{
+			color:#067D78;
+			font-family:Arial, "AppleGothic Regular";
+			margin: 20px auto;
+		}
+		legend{
+			color: #2E19B2;
+		}
+		em{
+			color: #B91FA7;
+		}
+		.st1{
+			margin: 10px;
+		}
+		
+	</style>
+</head>
+
+<body>
+	<form action="" method="post">
+<fieldset>
+			<legend>個人資料表<em>&nbsp;(必填)&nbsp;</em></legend>
+<!--<fieldset>表格框 <legend>表格名稱 <em>斜體-->
+<!--	.st1*4:會自動跳出四個div-->
+			<div class="st1">
+  <label class="title">姓名</label>
+					<input type="text" placeholder="name" size="15px" maxlength="10" value="name" name="name">
+			</div>
+			<div class="st1">
+				<label class="title">密碼</label>
+		  			<input type="password" size="15px" maxlength="15" name="pwd">
+			</div>
+			<div class="st1">
+				<label class="title">性別</label>
+		  			<input type="radio" name="gender" value="male">男
+					<input type="radio" name="gender" value="female">女
+					<input type="radio" name="gender" value="?">?
+			</div>
+			<div class="st1">
+  				<label class="title">身分證字號</label>
+					<input type="text" placeholder="ID" size="15px" maxlength="15">
+			</div>
+  </fieldset>
+	
+<!--	fieldset>(legend>em)+(.st1*3>label.title)-->
+	<fieldset>
+		<legend>地址<em>&nbsp;(必填)&nbsp;</em></legend>
+		<div class="st1">
+			<label for="" class="title">郵遞區號</label>
+			<input type="text" size="10px" maxlength="5">
+		</div>
+		<div class="st1">
+			<label for="" class="title">縣市</label>
+			<select name="add1">
+			  <option value="0"></option>
+			  <option value="1">台北市</option>
+				<option value="2">新北市</option>
+				<option value="3">基隆市</option>
+				<option value="4">宜蘭市</option>
+			</select>
+		</div>
+		<div class="st1">
+			<label for="" class="title">完整地址</label>
+			<input type="text" size="45px">
+		</div>
+	</fieldset>
+<!--	fieldset>(legend>em)+(.st1*3>label.)-->
+	<fieldset>
+		<legend>個人資料表二<em>（選填）</em></legend>
+		<div class="st1">
+			<label for="" class="">興趣：</label>
+			<input type="checkbox" name="hobby1" value="music">音樂
+			<input type="checkbox" name="hobby2" value="music">運動
+			<input type="checkbox" name="hobby3" value="music">閱讀
+			<input type="checkbox" name="hobby4" value="music">電影
+		</div>
+		<div class="st1">
+			<label for="" class="">照片：</label>
+			<input type="file" name="file1">
+		</div>
+		<div class="st1">
+			<label for="" class="">意見：</label>
+			<textarea cols="30" rows="5"></textarea>
+		</div>
+	</fieldset>
+		<br>
+		<div class="submit">
+			<input type="submit" value="送出">
+			<input type="reset" value="清除">
+<!--			按鈕裡的value：上面出現的字,type:動作-->
+		</div>
+</form>
+</body>
+</html>
