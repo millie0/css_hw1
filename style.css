@@ -1,4 +1,7 @@
 
+*{
+    font-family: 'Noto Sans TC', sans-serif;
+}
 body {
     background-color: #001150;
     height: 2000px;
@@ -25,6 +28,7 @@ body {
 }
 
 .text {
+    font-family: 'Noto Sans TC', sans-serif;
     color: white;
     float: right;
     font-size: 1em;
@@ -142,21 +146,13 @@ span {
     margin: 30% 0 0 -45px;
 }
 
-span.orange-font {
-    margin: 0;
-}
-
 .circle img {
     width: 250px;
     height: 250px;
 }
 
-.text {
-    margin: 0 auto;
-    /* text-align: center; */
-}
-
 .content {
+    font-family: 'Noto Sans TC', sans-serif;
     font-size: 18px;
     max-width: 200px;
     color: white;
@@ -164,6 +160,7 @@ span.orange-font {
     word-break: break-all;
     margin: 0 auto;
     text-align: left;
+    font-weight: 400;
 }
 
 .lecture {
@@ -183,7 +180,7 @@ span.orange-font {
 }
 
 p {
-    font-size: 20px;
+    /* font-size: 20px; */
     color: white;
     line-height: 30px;
     font-weight: 600;
@@ -192,6 +189,7 @@ p {
 }
 .lecture p{
     text-align: center;
+    font-size: 20px;
 }
 
 span.orange-font {
@@ -222,6 +220,7 @@ span.orange-font {
 }
 
 .grad {
+    font-size: 20px;
     background: url(./link/bar-bg.png) top center;
     height: 50px;
     padding: 10px 0;
@@ -242,7 +241,7 @@ table td:first-child {
 }
 
 table td:first-child span {
-    width: 100%;
+    width: 170px;
     font-size: 18px;
     font-weight: bold;
     color: #001150;
@@ -250,6 +249,7 @@ table td:first-child span {
     padding: 10px 20px;
     box-sizing: border-box;
     margin: 0;
+    display: block;
 }
 
 /* tr {
@@ -262,7 +262,7 @@ td {
     color: white;
     border-top: 1px solid #eee;
     height: 98px;
-    padding: 10px 0 30px;
+    padding-right: 60px;
     box-sizing: border-box;
 }
 
@@ -319,7 +319,37 @@ td {
 .section6 img{
     float: left;
 }
-
-/* .section5{
-    
+.footer{
+    width: 100%;
+    padding: 30px 20px;
+    box-sizing: border-box;
+    background-color:#2e3989;
+}
+.brand{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding-bottom: 40px;
+}
+/* .container img, .container span{
+    display: inline;
 } */
+.container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-right: 40px;
+    flex-wrap: wrap;
+}
+.footer span{
+    color: white;
+    font-size: 18px;
+    margin-right: 20px;
+}
+.footer .text-footer{
+    width: 80%;
+    font-size: 16px;
+    font-weight: 300;
+    margin: 20px auto;
+    padding: 0 20px;
+}
